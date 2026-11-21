@@ -1,0 +1,28 @@
+id,categoria,componente,modelo,cantidad,proveedor,ciudad,precio_unit_pen,subtotal_pen,exacto_en_peru,estado,tipo,url,nota
+1,Computo,Raspberry Pi 5 8 GB,Placa oficial,1,The Pi Box,Lima,768.00,768.00,Si,En stock,Verificado,https://thepibox.pe/shop/cmp-rp-010-raspberry-pi-5-de-8gb-3444,Incluye IGV
+2,Almacenamiento,SSD SATA 2.5 256 GB,ADATA SU650,1,Falabella,Lima,185.90,185.90,No,Marketplace,Verificado,https://www.falabella.com.pe/falabella-pe/product/140636555/UNIDAD-DE-ESTADO-SOLIDO-SSD-25-SATA-256GB-ADATA-SU650,Alternativa al NVMe por falta de HAT
+3,Almacenamiento,Caja USB 3.0 para SSD 2.5,SATA a USB 3.0,1,Falabella,Lima,24.80,24.80,No,Marketplace,Verificado,https://www.falabella.com.pe/falabella-pe/product/159275261/case-externo-para-disco-duro-hdd-ssd-2-5-pulgadas-sata-usb-3-0-5gbps-con-cable-y-adaptador-tipo-c,Para arranque por USB
+4,Computo,Refrigeracion,Active Cooler oficial,1,The Pi Box,Lima,29.90,29.90,Si,En stock,Verificado,https://thepibox.pe/shop/enf-rp-001-active-cooler-raspberry-pi-3454,
+5,Almacenamiento,microSD 64 GB A2,SanDisk Extreme Pro,1,Falabella,Lima,64.90,64.90,Si,Marketplace,Verificado,https://www.falabella.com.pe/falabella-pe/product/159238184/tarjeta-de-memoria-microsd-64gb-extreme-pro-4k-hdr-a2-v60-con-adaptador,Respaldo
+6,Computo,Fuente 27 W USB-C,5.1 V 5 A oficial,1,The Pi Box,Lima,67.00,67.00,Si,En stock,Verificado,https://thepibox.pe/shop/fuente-de-poder-27-w-raspberry-pi-3458,Pruebas de banco
+7,Percepcion,LiDAR 2D 360,RPLIDAR A1M8-R6 12 m,1,Electromania,Lima,600.00,600.00,Si,En stock,Verificado,https://www.electromania.pe/producto/escaner-lidar-de-360-grados-rplidar-a1m8-r6-12m/,Quedaban 12
+8,Percepcion,IMU 9-DOF,BNO085,1,Electronics Peru,Ica,100.00,100.00,Si,En stock,Verificado,https://www.electronicsperu.com/product/sensor-imu-9dof-bno085-ahrs-para-ar-vr-y-robotica/,Tienda en Ica
+9,Percepcion,Monitor de bateria,INA219 I2C,1,Electromania,Lima,12.50,12.50,Si,En stock,Verificado,https://www.electromania.pe/producto/modulo-sensor-bidireccional-de-monitorizacion-de-corriente-potencia-mcu-219-ina219-i2c/,
+10,Traccion,Motorreductor 12 V con encoder,FIT0185 83 rpm 45 kg-cm,2,Electromania,Lima,145.00,290.00,No,En stock,Verificado,https://www.electromania.pe/producto/motorreductor-de-metal-con-encoder-12v-83rpm-45kg/,Sustituto del 50 rpm; 7 A de bloqueo
+11,Traccion,Driver BTS7960,43 A,2,Naylamp,Peru,45.00,90.00,No,En stock,Verificado,https://naylampmechatronics.com/drivers/590-driver-puente-h-bts7960-43a.html,Sustituto del MDD10A
+12,Traccion,Ruedas 90 mm,Buje PETG + banda TPU,4,Print3D.pe / taller,Trujillo,25.00,100.00,No,Estimado,Estimado,https://print3d.pe/,Cotizar por pieza y material
+13,Energia,Bateria LiFePO4 12 V 10 Ah,Goldenmate BMS IP67,1,Falabella,Lima,239.00,239.00,No,Importada EE. UU.,Verificado,https://www.falabella.com.pe/falabella-pe/product/155618417/bateraa-lifepo4-goldenmate-12v-10ah-bms-ip67-5000-ciclos,BMS 10 A; 1.5 kg
+14,Energia,Cargador LiFePO4,14.6 V 5-10 A por cotizar,1,Falabella / importacion,Lima,200.00,200.00,No,Estimado,Estimado,https://www.falabella.com.pe/falabella-pe/product/155603105/cargador-bateraa-lifepo4-lvyuan-14-6v-20a-smart-12v,El LVYUAN 20 A cuesta S/ 359
+15,Energia,DC-DC 5 V 5 A,XL4005 5 A,1,Electromania,Lima,6.59,6.59,Si,En stock,Verificado,https://www.electromania.pe/producto/regulador-de-voltaje-dc-dc-step-down-xl4005e1-5a/,Derratear y verificar ripple
+16,Energia,DC-DC 5 V 3 A,XL4005 5 A,1,Electromania,Lima,6.59,6.59,Si,En stock,Verificado,https://www.electromania.pe/producto/regulador-de-voltaje-dc-dc-step-down-xl4005e1-5a/,Segundo modulo
+17,Energia,Portafusibles,Linea mini cuchilla 12 A,1,Falabella,Lima,15.90,15.90,Si,Marketplace,Verificado,https://www.falabella.com.pe/falabella-pe/product/155449922/1-juego-de-portafusibles-en-linea-mini-tipo-cuchilla-impermeable-con-fusible-10a,
+18,Energia,Fusibles,Surtido vidrio 250 V,1,Electromania,Lima,12.00,12.00,Si,En stock,Verificado,https://www.electromania.pe/producto/100x-fusibles-de-vidrio-250v/,Para banco; comprar cuchilla para potencia
+19,Energia,Parada de emergencia,Seta enclavada 660 V 10 A,1,Electromania,Lima,8.00,8.00,Si,En stock,Verificado,https://www.electromania.pe/producto/boton-de-parada-de-emergencia-ac660v-10a/,
+20,Energia,Interruptor general,Desconectador 12-48 V,1,Falabella,Lima,46.90,46.90,Si,Marketplace,Verificado,https://www.falabella.com.pe/falabella-pe/product/157324117/interruptor-de-bateria-12v-48v-universal-para-auto-autocaravana-y-barco,
+21,Chasis,Perfil V-Slot 2040,Barra 3.2 m,1,Naylamp,Peru,160.00,160.00,No,En stock,Verificado,https://naylampmechatronics.com/perfiles-de-aluminio/688-perfil-v-slot-2040-l3200mm.html,El 2020 esta agotado
+22,Chasis,Placas PETG / aluminio,Corte o impresion 3D,1,Print3D.pe / taller,Trujillo,80.00,80.00,No,Estimado,Estimado,https://print3d.pe/,Cotizar
+23,Cableado,Cable y conectores,XT60/XT30 14-18 AWG,1,Naylamp / Electromania,Lima,80.00,80.00,Parcial,Estimado,Estimado,https://naylampmechatronics.com/conectores-electricos/749-conector-xt60-macho.html,Incluye termorretractil
+24,Tornilleria,Tornillos y tuercas,M3/M4 y tuercas en T,1,Naylamp / ferreteria,Lima,50.00,50.00,Si,Estimado,Estimado,https://naylampmechatronics.com/72-tornillos-y-tuercas,
+25,Varios,Ventilador/rejilla/espuma,Accesorios de caja,1,The Pi Box / ferreteria,Lima,30.00,30.00,No,Estimado,Estimado,https://thepibox.pe/,
+26,Repuestos,Fusibles/cable/conectores,Reposicion,1,Varios,Lima,50.00,50.00,Si,Estimado,Estimado,,Critico para la demo
+TOTAL,,,,,,,,3317.98,,,,,Sin envio; incluye estimados

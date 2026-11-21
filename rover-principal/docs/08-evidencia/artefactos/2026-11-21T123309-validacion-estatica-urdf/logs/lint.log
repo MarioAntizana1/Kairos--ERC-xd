@@ -1,0 +1,15 @@
+Python: 16 file(s), 0 error(s)
+Bash: 11 file(s), 0 error(s)
+YAML: 4 file(s), 0 error(s)
+XML/URDF/SDF: 5 file(s), 0 error(s)
+JSON: 3 file(s), 0 error(s)
+
+OK: all syntax checks passed
+
+ruff not installed: skipped (optional; pip install ruff).
+
+xacro not installed: skipped (install ros-jazzy-xacro).
+
+shellcheck not installed: skipped (install it for stricter Bash checks).
+
+OK: lint checks completed

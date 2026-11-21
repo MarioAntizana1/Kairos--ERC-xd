@@ -1,0 +1,12 @@
+item,modelo_sku,proveedor,cantidad,moneda,precio_unit,subtotal,stock,fecha,url,nota
+Camara web 4K,Elgato Facecam 4K / 040866 / 10WAF9901,Memory Kings,2,PEN,828.00,1656.00,>10,2026-11-21,https://www.memorykings.pe/producto/354472/camara-webcam-elgato-facecam-4k-uhd-60fps,IGV incluido; flete no incluido
+ToF punto unico,Benewake TFmini Plus / J006-SEN0309,Electromania,1,PEN,330.00,330.00,8,2026-11-21,https://www.electromania.pe/producto/tfmini-plus-sensor-lidar-tof-de-distancia-de-punto-unico-12m-uart-i2c-ip65/,Solo quedan 8
+Montaje rigido,Barra aluminio + soportes a medida,Taller local,1,PEN,250.00,250.00,,2026-11-21,,Estimado; no cotizado
+Cables USB 3.0 + hub,Certificados,Tienda local,1,PEN,150.00,150.00,,2026-11-21,,Estimado; no cotizado
+ToF alternativo,Benewake TFmini-S / C010A-SEN0259,Electromania,1,PEN,299.00,299.00,3,2026-11-21,https://www.electromania.pe/producto/sensor-lidar-de-estado-solido-de-rango-de-un-solo-punto-tfmini-s-tof-12-m-uart-i2c/,Solo quedan 3; discrepancia de specs
+ToF largo alcance,Garmin LIDAR-Lite v3HP / R004-EP-176,Electromania,1,PEN,850.00,850.00,11,2026-11-21,https://www.electromania.pe/producto/sensor-lidar-lite-v3hp/,Solo quedan 11
+ToF near-field,DFRobot 4 m I2C IP67 / SEN0590,Electromania,1,PEN,115.00,115.00,3,2026-11-21,https://www.electromania.pe/producto/sensor-de-distancia-laser-mini-4-m-i2c-ip67/,Solo quedan 3; imagenes inconsistentes
+ToF near-field,ST VL53L1X / 000715,Naylamp Mechatronics,1,PEN,75.00,75.00,En stock,2026-11-21,https://naylampmechatronics.com/sensores-proximidad/715-sensor-de-distancia-tof-vl53l1x.html,
+ToF multizona,Pololu VL53L8CX carrier,Pololu / importacion,1,USD,24.95,24.95,Importar,2026-11-21,https://www.pololu.com/product/3419,Precio USD; no incluye envio/aduanas
+Camara 4K economica,Creative Live! Cam Sync 4K UHD,Memory Kings,1,PEN,261.00,261.00,>10,2026-11-21,https://www.memorykings.pe/listados/176/camaras-webcam,
+Camara 4K alternativa,Logitech Brio 4K Ultra HD Pro,Memory Kings,1,PEN,487.00,487.00,>10,2026-11-21,https://www.memorykings.pe/listados/176/camaras-webcam,Oferta; lista S/ 612

@@ -1,0 +1,31 @@
+{
+  "id": "EV-2026-11-21-04",
+  "date": "2026-11-21T17:36:36Z",
+  "slug": "integracion-final",
+  "operator": "mario",
+  "host": "Mario-laptop",
+  "os": "Linux-7.3.3-100.fc43.x86_64-x86_64-with-glibc2.42",
+  "kernel": "7.3.3-100.fc43.x86_64",
+  "architecture": "x86_64",
+  "python": "3.14.10",
+  "ros_distro": null,
+  "gazebo": null,
+  "commit": null,
+  "dirty": false,
+  "command": "PATH=/tmp/opencode/rover-venv/bin:$PATH make check; make urdf-check; make energy; make docs; bash scripts/check_env.sh",
+  "requirements": [
+    "RNF-09",
+    "RNF-11"
+  ],
+  "tests": [
+    "TC-01",
+    "TC-02",
+    "TC-03",
+    "TC-04",
+    "TC-05",
+    "TC-21"
+  ],
+  "result": "passed_with_limitations",
+  "notes": "Integracion final del mini demo y del estudio 6x6: 67 Markdown, 207 enlaces, 34 pruebas unitarias, URDF valido, Ruff y modelo energetico. OQ-09 sigue abierta. No se ejecutaron ROS 2, Nav2, Gazebo ni hardware.",
+  "environment_limitations": "Host Fedora 43 sin ROS 2 ni Gazebo. La validacion de runtime requiere Ubuntu 24.04 + ROS 2 Jazzy + Gazebo Harmonic."
+}

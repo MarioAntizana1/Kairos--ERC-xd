@@ -1,0 +1,3 @@
+xacro ros_ws/src/rover_description/urdf/rover.urdf.xacro > /tmp/rover_demo.urdf
+python3 scripts/test/check_urdf.py /tmp/rover_demo.urdf
+URDF OK: 8 links, 7 joints, 2 sensors, 2 gazebo plugins

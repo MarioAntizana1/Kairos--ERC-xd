@@ -1,0 +1,39 @@
+id,opcion,categoria,componente,modelo,cantidad,proveedor,ciudad,precio_unit_pen,subtotal_pen,estado,tipo,url,nota
+E1,S3,Control,MCU de interfaz,ESP32-S3-DevKitC-1 N16R8,1,Tesla Electronic,Trujillo,110.00,110.00,En stock,Verificado,https://www.teslaelectronic.com.pe/producto/nodemcu-esp32-s3-devkitc-1-n16r8-tipo-usb-c/,4 unidades
+E4,S3,Control,Expansor I2C,TCA9548A 8 canales,1,Electromania,Lima,5.00,5.00,En stock,Verificado,https://www.electromania.pe/producto/modulo-i2c-8-canales-tca9548a/,
+E5,S3,Control,Adaptador de nivel,3.3-5V 4 lineas,1,Electromania,Lima,3.00,3.00,En stock,Verificado,https://www.electromania.pe/producto/convertidor-de-nivel-logico-3-3-5v-de-4-lineas/,Para encoders de 5V
+E6,S3,Control,Optoacoplador,PC817,1,Tesla Electronic,Trujillo,2.00,2.00,En stock,Verificado,https://www.teslaelectronic.com.pe/producto/pc817-optocoplador-fototransistor/,Sentido de e-stop
+E7,S3,Control,Protoboard/headers/terminales,Arnes,1,Bracsan / Electromania,Lima,40.00,40.00,Estimado,Estimado,https://bracsan.pe/,
+E8,S3,Control,Cable USB con ferrita,USB-C corto,1,Varios,Lima,15.00,15.00,Estimado,Estimado,,
+E9,S3,Control,Caja/soporte,Impresion 3D o acrilico,1,Print3D.pe / taller,Trujillo,20.00,20.00,Estimado,Estimado,https://print3d.pe/,
+E2,C6,Control,MCU de interfaz,ESP32-C6-DevKitC-1 N8,1,MTLAB,Lima,100.00,100.00,Ultimas unidades,Verificado,https://mtlab.pe/producto/esp32-c6-devkitc-1-n8-placa-de-desarrollo-espressif/,Solo Lima/Callao
+E4b,C6,Control,Expansor I2C,TCA9548A 8 canales,1,Electromania,Lima,5.00,5.00,En stock,Verificado,https://www.electromania.pe/producto/modulo-i2c-8-canales-tca9548a/,
+E5b,C6,Control,Adaptador de nivel,3.3-5V 4 lineas,1,Electromania,Lima,3.00,3.00,En stock,Verificado,https://www.electromania.pe/producto/convertidor-de-nivel-logico-3-3-5v-de-4-lineas/,Para encoders de 5V
+E6b,C6,Control,Optoacoplador,PC817,1,Tesla Electronic,Trujillo,2.00,2.00,En stock,Verificado,https://www.teslaelectronic.com.pe/producto/pc817-optocoplador-fototransistor/,Sentido de e-stop
+E7b,C6,Control,Protoboard/headers/terminales,Arnes,1,Bracsan / Electromania,Lima,40.00,40.00,Estimado,Estimado,https://bracsan.pe/,
+E8b,C6,Control,Cable USB con ferrita,USB-C corto,1,Varios,Lima,15.00,15.00,Estimado,Estimado,,
+E9b,C6,Control,Caja/soporte,Impresion 3D o acrilico,1,Print3D.pe / taller,Trujillo,20.00,20.00,Estimado,Estimado,https://print3d.pe/,
+E3,XIAO,Control,MCU de interfaz,Seeed XIAO ESP32-C6,1,Electromania,Lima,39.00,39.00,En stock,Verificado,https://www.electromania.pe/producto/seeed-studio-xiao-esp32-c6-tape-reel/,Solo 11 GPIO
+E4c,XIAO,Control,Expansor I2C,TCA9548A 8 canales,1,Electromania,Lima,5.00,5.00,En stock,Verificado,https://www.electromania.pe/producto/modulo-i2c-8-canales-tca9548a/,
+E5c,XIAO,Control,Adaptador de nivel,3.3-5V 4 lineas,1,Electromania,Lima,3.00,3.00,En stock,Verificado,https://www.electromania.pe/producto/convertidor-de-nivel-logico-3-3-5v-de-4-lineas/,Para encoders de 5V
+E6c,XIAO,Control,Optoacoplador,PC817,1,Tesla Electronic,Trujillo,2.00,2.00,En stock,Verificado,https://www.teslaelectronic.com.pe/producto/pc817-optocoplador-fototransistor/,Sentido de e-stop
+E7c,XIAO,Control,Protoboard/headers/terminales,Arnes,1,Bracsan / Electromania,Lima,40.00,40.00,Estimado,Estimado,https://bracsan.pe/,
+E8c,XIAO,Control,Cable USB con ferrita,USB-C corto,1,Varios,Lima,15.00,15.00,Estimado,Estimado,,
+E9c,XIAO,Control,Caja/soporte,Impresion 3D o acrilico,1,Print3D.pe / taller,Trujillo,20.00,20.00,Estimado,Estimado,https://print3d.pe/,
+B1,3S2P,Bateria,Celda Li-ion 18650,EVE INR18650/35V 3500mAh,6,Bracsan,Lima,19.00,114.00,En stock,Verificado,https://bracsan.pe/producto/bateria-de-litio-li-ion-recargable-3-7v-3500mah-eve-inr18650-35v/,10.2A max not for cycle life
+B2,3S2P,Bateria,BMS 3S,25A 11.1/12.6V,1,Bracsan,Lima,18.00,18.00,En stock,Verificado,https://bracsan.pe/producto/modulo-para-carga-de-baterias-de-li-ion-bms-3s-25a-11-1v-12v-12-6v-18650-bc-3s25a/,Confirmar balanceo
+B3,3S2P,Bateria,Nickel,Tira 18650 1m,1,Bracsan,Lima,5.00,5.00,En stock,Verificado,https://bracsan.pe/producto/platina-niquel-para-conexion-de-baterias-18650-x-metro-1mt/,
+B4,3S2P,Bateria,Espaciadores,3x1 para 18650,2,Bracsan,Lima,0.60,1.20,En stock,Verificado,https://bracsan.pe/producto/espaciadores-3x1-para-bateria-de-li-ion-3-celda-18650/,
+B5,3S2P,Bateria,Conector,XT60 macho/hembra,1,Bracsan,Lima,4.50,4.50,En stock,Verificado,https://bracsan.pe/producto/conector-xt60-macho-hembra-bala-para-bateria-lipo-amass-xt60/,
+B6,3S2P,Bateria,Cargador,12.6V 3A,1,Bracsan,Lima,48.00,48.00,En stock,Verificado,https://bracsan.pe/producto/cargador-para-bateria-de-litio-li-ion-12-6v-3a-jx-12630/,
+B7,3S2P,Bateria,Cable/termoretractil/fusible,Arnes del pack,1,Bracsan / varios,Lima,20.00,20.00,Estimado,Estimado,https://bracsan.pe/,
+B1b,3S3P,Bateria,Celda Li-ion 18650,EVE INR18650/35V 3500mAh,9,Bracsan,Lima,19.00,171.00,En stock,Verificado,https://bracsan.pe/producto/bateria-de-litio-li-ion-recargable-3-7v-3500mah-eve-inr18650-35v/,
+B2b,3S3P,Bateria,BMS 3S,25A 11.1/12.6V,1,Bracsan,Lima,18.00,18.00,En stock,Verificado,https://bracsan.pe/producto/modulo-para-carga-de-baterias-de-li-ion-bms-3s-25a-11-1v-12v-12-6v-18650-bc-3s25a/,
+B3b,3S3P,Bateria,Nickel,Tira 18650 10m,1,Bracsan,Lima,35.00,35.00,En stock,Verificado,https://bracsan.pe/producto/platina-niquel-para-conexion-de-baterias-18650-rollo-10-metros/,
+B4b,3S3P,Bateria,Espaciadores,3x1 para 18650,3,Bracsan,Lima,0.60,1.80,En stock,Verificado,https://bracsan.pe/producto/espaciadores-3x1-para-bateria-de-li-ion-3-celda-18650/,
+B5b,3S3P,Bateria,Conector,XT60 macho/hembra,1,Bracsan,Lima,4.50,4.50,En stock,Verificado,https://bracsan.pe/producto/conector-xt60-macho-hembra-bala-para-bateria-lipo-amass-xt60/,
+B6b,3S3P,Bateria,Cargador,12.6V 3A,1,Bracsan,Lima,48.00,48.00,En stock,Verificado,https://bracsan.pe/producto/cargador-para-bateria-de-litio-li-ion-12-6v-3a-jx-12630/,
+B7b,3S3P,Bateria,Cable/termoretractil/fusible,Arnes del pack,1,Bracsan / varios,Lima,20.00,20.00,Estimado,Estimado,https://bracsan.pe/,
+B8,3S2P,Bateria,Rele de potencia,12V 30A + porta relay,1,Bracsan,Lima,7.50,7.50,En stock,Verificado,https://bracsan.pe/producto/relay-12vdc-5-pines-250vac-30a-songle-sla-12vdc-sl-a/,La seta corta la bobina; el rele corta la potencia
+B8b,3S3P,Bateria,Rele de potencia,12V 30A + porta relay,1,Bracsan,Lima,7.50,7.50,En stock,Verificado,https://bracsan.pe/producto/porta-relay-de-ceramica-para-relay-automotriz-de-5-pines-kavto-kv-s008-23/,La seta corta la bobina; el rele corta la potencia
+T1,Herramienta,Herramienta,Soldador de punto,Portatil 10000mAh,1,Bracsan,Lima,390.00,390.00,En stock,Verificado,https://bracsan.pe/producto/soldador-de-punto-portatil-recargable-10000mah-para-bateria/,Opcional; no incluido en subtotales

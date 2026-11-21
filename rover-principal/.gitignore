@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ROS 2 / colcon
+ros_ws/build/
+ros_ws/install/
+ros_ws/log/
+log/
+build/
+install/
+COLCON_IGNORE
+
+# ROS bags y artefactos pesados
+bags/
+*.db3
+*.mcap
+*.bag
+docs/08-evidencia/artefactos/**/bags/*
+!docs/08-evidencia/artefactos/**/bags/.gitkeep
+docs/08-evidencia/artefactos/**/media/*.mp4
+docs/08-evidencia/artefactos/**/media/*.mkv
+
+# Editores y sistema
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Secretos y configuración local
+.env
+.env.*
+*.pem
+*.key
+secrets/
+config/local/

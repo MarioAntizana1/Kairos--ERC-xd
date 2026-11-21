@@ -1,0 +1,23 @@
+{
+  "id": "EV-2026-11-21-02",
+  "date": "2026-11-21T17:33:10Z",
+  "slug": "validacion-estatica-urdf",
+  "operator": "mario",
+  "host": "Mario-laptop",
+  "os": "Linux-7.3.3-100.fc43.x86_64-x86_64-with-glibc2.42",
+  "kernel": "7.3.3-100.fc43.x86_64",
+  "architecture": "x86_64",
+  "python": "3.14.10",
+  "ros_distro": null,
+  "gazebo": null,
+  "commit": null,
+  "dirty": false,
+  "command": "make check; bash scripts/test/lint.sh; ruff check --select E9,F .; xacro rover.urdf.xacro; python3 scripts/test/check_urdf.py; make energy",
+  "requirements": [
+    "RNF-09"
+  ],
+  "tests": [],
+  "result": "passed",
+  "notes": "Validacion estatica del URDF/Xacro, lint Python y modelo energetico. No se ejecuto Gazebo ni Nav2. El estudio 6x6 es una variante pendiente de OQ-09, no la base del mini demo.",
+  "environment_limitations": "Host sin ROS 2 ni Gazebo. xacro, urdf-parser-py y ruff se ejecutaron en un venv aislado en /tmp/opencode/rover-venv."
+}

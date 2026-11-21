@@ -1,0 +1,10 @@
+ERROR: this project targets Ubuntu 24.04 LTS (Noble Numbat).
+Detected: Fedora Linux 43
+
+ROS 2 Jazzy binary packages are built for Ubuntu 24.04. Options:
+  1. Create an Ubuntu 24.04 VM (recommended).
+  2. Use an Ubuntu 24.04 container (Gazebo needs GPU/X11 passthrough).
+  3. Install Ubuntu 24.04 on the Raspberry Pi 5.
+
+See docs/05-implementacion/entorno-desarrollo.md
+exit_code=1
