@@ -1,0 +1,15 @@
+python3 scripts/docs/check_docs.py
+Docs scanned: 52
+Local links checked: 127
+Functional/NFR IDs: 12/14
+Test cases: 15
+Sources: 28
+ADRs: 5
+
+OK: 0 error(s), 0 warning(s)
+python3 scripts/docs/check_bom.py
+Base (incluir=si): S/ 2,229.60
+Contingencia 5%:   S/ 111.48
+Total:             S/ 2,341.08
+
+OK: BOM consistente

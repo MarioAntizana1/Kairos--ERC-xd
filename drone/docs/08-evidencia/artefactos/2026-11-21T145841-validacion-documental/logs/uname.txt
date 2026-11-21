@@ -1,0 +1,1 @@
+Linux Mario-laptop 7.3.3-100.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Nov  6 22:01:39 UTC 2026 x86_64 GNU/Linux

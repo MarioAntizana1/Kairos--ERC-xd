@@ -1,0 +1,31 @@
+{
+  "id": "EV-2026-11-21-04",
+  "date": "2026-11-21T16:59:12-05:00",
+  "operator": "QA",
+  "host": "Mario-laptop",
+  "os": "Linux 7.3.3-100.fc43.x86_64",
+  "python": "3.14.10",
+  "commit": "no-git",
+  "dirty": "unknown",
+  "command": "make check",
+  "requirements": ["RNF-13"],
+  "tests": ["TC-15"],
+  "result": "passed",
+  "docs_scanned": 51,
+  "links_checked": 127,
+  "rf_defined": 12,
+  "rnf_defined": 14,
+  "test_cases_defined": 15,
+  "sources_defined": 28,
+  "adrs": 5,
+  "bom_base_pen": 2229.60,
+  "bom_contingency_pen": 111.48,
+  "bom_total_pen": 2341.08,
+  "change": "6 m indoor/cage; TFmini Plus 12 m base",
+  "limitations": [
+    "No hardware: TFmini 6 m, calibration and flight pending",
+    "Local positioning in cage not confirmed (OQ-12)",
+    "Camera orientation open (OQ-11)",
+    "Prices are a web supply study, not invoices"
+  ]
+}

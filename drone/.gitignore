@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Entornos y build
+build/
+install/
+log/
+*.egg-info/
+
+# Evidencia pesada y datos crudos
+docs/08-evidencia/artefactos/**/bags/*.db3
+docs/08-evidencia/artefactos/**/media/*.mp4
+docs/08-evidencia/artefactos/**/media/*.mkv
+!docs/08-evidencia/artefactos/**/bags/.gitkeep
+!docs/08-evidencia/artefactos/**/media/.gitkeep
+
+# Calibraciones locales y secretos
+calibracion/
+*.local.yaml
+.env
+*.key
+
+# Editores y sistema
+.DS_Store
+*.swp
+*~

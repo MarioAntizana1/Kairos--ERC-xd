@@ -1,0 +1,29 @@
+{
+  "id": "EV-2026-11-21-01",
+  "date": "2026-11-21T14:58:41-05:00",
+  "operator": "QA",
+  "host": "Mario-laptop",
+  "os": "Linux 7.3.3-100.fc43.x86_64",
+  "python": "3.14.10",
+  "commit": "no-git",
+  "dirty": "unknown",
+  "command": "make check",
+  "requirements": ["RNF-13"],
+  "tests": ["TC-15"],
+  "result": "passed",
+  "docs_scanned": 48,
+  "links_checked": 121,
+  "rf_defined": 12,
+  "rnf_defined": 14,
+  "test_cases_defined": 15,
+  "sources_defined": 28,
+  "adrs": 5,
+  "bom_base_pen": 1974.60,
+  "bom_contingency_pen": 98.73,
+  "bom_total_pen": 2073.33,
+  "limitations": [
+    "No hardware: no Pi 5, cameras, ToF or flight",
+    "Prices are a web supply study, not invoices",
+    "Documentation consistency, not runtime behavior"
+  ]
+}
