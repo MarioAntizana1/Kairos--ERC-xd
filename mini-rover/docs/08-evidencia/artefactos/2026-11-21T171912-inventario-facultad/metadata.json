@@ -1,0 +1,31 @@
+{
+  "id": "EV-2026-11-21-05",
+  "date": "2026-11-21T22:19:12Z",
+  "slug": "inventario-facultad",
+  "operator": "mario",
+  "host": "Mario-laptop",
+  "os": "Linux-7.3.3-100.fc43.x86_64-x86_64-with-glibc2.42",
+  "kernel": "7.3.3-100.fc43.x86_64",
+  "architecture": "x86_64",
+  "python": "3.14.10",
+  "ros_distro": null,
+  "gazebo": null,
+  "commit": null,
+  "dirty": true,
+  "command": "make check",
+  "requirements": [
+    "RNF-09",
+    "RNF-11"
+  ],
+  "tests": [
+    "TC-01",
+    "TC-02",
+    "TC-03",
+    "TC-04",
+    "TC-05",
+    "TC-21"
+  ],
+  "result": "passed_with_limitations",
+  "notes": "Validacion documental del inventario de facultad y de las brechas frente a la BOM. 73 Markdown, 296 enlaces, 61 fuentes, 34 pruebas unitarias y lint sin errores. El inventario no se ha verificado fisicamente y no se ejecutaron ROS 2, Nav2, Gazebo ni hardware.",
+  "environment_limitations": "Host Fedora 43 sin ROS 2 ni Gazebo. La validacion de runtime requiere Ubuntu 24.04 + ROS 2 Jazzy + Gazebo Harmonic."
+}

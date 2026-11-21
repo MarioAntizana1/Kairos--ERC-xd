@@ -1,0 +1,46 @@
+{
+  "name": "mini_marsyard",
+  "description": "Reduced Marsyard-like arena for the autonomous navigation demo",
+  "width": 12.0,
+  "height": 8.0,
+  "wall_thickness": 0.2,
+  "wall_height": 0.6,
+  "resolution": 0.05,
+  "margin": 0.5,
+  "obstacles": [
+    {
+      "name": "rock_a",
+      "type": "box",
+      "x": 2.0,
+      "y": 1.2,
+      "sx": 0.8,
+      "sy": 0.8,
+      "height": 0.5
+    },
+    {
+      "name": "rock_b",
+      "type": "box",
+      "x": -1.5,
+      "y": -1.0,
+      "sx": 1.0,
+      "sy": 0.6,
+      "height": 0.4
+    },
+    {
+      "name": "rock_c",
+      "type": "cylinder",
+      "x": 3.0,
+      "y": 0.0,
+      "radius": 0.4,
+      "height": 0.7
+    },
+    {
+      "name": "rock_d",
+      "type": "cylinder",
+      "x": -2.5,
+      "y": 0.8,
+      "radius": 0.6,
+      "height": 0.4
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "EV-2026-11-21-06",
+  "date": "2026-11-21T23:05:49Z",
+  "slug": "cambio-pi4-camera-lte",
+  "operator": "mario",
+  "host": "Mario-laptop",
+  "os": "Linux-7.3.3-100.fc43.x86_64-x86_64-with-glibc2.42",
+  "kernel": "7.3.3-100.fc43.x86_64",
+  "architecture": "x86_64",
+  "python": "3.14.10",
+  "ros_distro": null,
+  "gazebo": null,
+  "commit": null,
+  "dirty": true,
+  "command": "make check",
+  "requirements": [
+    "RNF-09",
+    "RNF-11"
+  ],
+  "tests": [
+    "TC-01",
+    "TC-02",
+    "TC-03",
+    "TC-04",
+    "TC-05",
+    "TC-21"
+  ],
+  "result": "passed_with_limitations",
+  "notes": "Validacion documental del cambio a Raspberry Pi 4 8 GB + Argon ONE (ADR-0010), la obsolescencia de ADR-0009 y las propuestas ADR-0011 (camara CSI + USB) y ADR-0012 (LilyGO LTE/GNSS). 77 Markdown, 346 enlaces, 64 fuentes, 12 ADR, 34 pruebas unitarias y lint sin errores. No se ejecutaron ROS 2, Nav2, Gazebo ni hardware; el estereo CSI + USB y el LTE son propuestas, no resultados.",
+  "environment_limitations": "Host Fedora 43 sin ROS 2 ni Gazebo. La validacion de runtime requiere Ubuntu 24.04 + ROS 2 Jazzy + Gazebo Harmonic. El inventario no se ha verificado fisicamente y la BOM revisada (671 EUR) esta pendiente de aprobacion."
+}

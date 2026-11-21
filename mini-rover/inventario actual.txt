@@ -1,0 +1,19 @@
+Argon1 Pi4 
+rasperry 4 model B
+arduino 1 XD
+3 drivers TB6612FNG
+PCA9685 - 16 Channel 12-Bit PWM Driver
+GY-271 - magnetometro
+VL53L0/1XV2 -tof
+MPU-6050 - 
+LM2596 DC-DC/HW-411
+Rasperry camera V2.1 
+4 Microservo 9g SG90
+6 Microservo MG90S
+6 motoreductores de metal 10f125 sin encoder
+
+lilygo esp32 7600X
+4 celdas solares HFK 6v720 165x165mm
+encendedor
+bat lipo DUPU 11.1V 2200mAh 25C
+

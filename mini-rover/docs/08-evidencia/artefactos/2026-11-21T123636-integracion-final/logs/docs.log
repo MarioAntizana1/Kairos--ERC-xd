@@ -1,0 +1,9 @@
+python3 scripts/docs/check_docs.py
+Docs scanned: 67
+Local links checked: 207
+Functional/NFR IDs: 13/14
+Test cases: 21
+Sources: 26
+ADRs: 7
+
+OK: 0 error(s), 0 warning(s)

@@ -1,0 +1,36 @@
+frame_id: map
+loop: false
+return_to_base: true
+max_retries: 1
+goal_timeout_s: 120.0
+waypoints:
+  - id: WP-01
+    x: 4.0
+    y: 2.5
+    yaw: 0.0
+    tolerance: 0.25
+    timeout_s: 90.0
+  - id: WP-02
+    x: -4.0
+    y: 2.5
+    yaw: 1.57
+    tolerance: 0.25
+    timeout_s: 90.0
+  - id: WP-03
+    x: -4.0
+    y: -2.5
+    yaw: 3.14
+    tolerance: 0.25
+    timeout_s: 90.0
+  - id: WP-04
+    x: 4.8
+    y: -2.8
+    yaw: 0.0
+    tolerance: 0.25
+    timeout_s: 90.0
+  - id: BASE
+    x: 0.0
+    y: 0.0
+    yaw: 0.0
+    tolerance: 0.25
+    timeout_s: 90.0

@@ -1,0 +1,73 @@
+python3 scripts/docs/check_docs.py
+Docs scanned: 78
+Local links checked: 355
+Functional/NFR IDs: 13/14
+Test cases: 21
+Sources: 64
+ADRs: 12
+
+OK: 0 error(s), 0 warning(s)
+python3 scripts/docs/generate_arena.py --check
+OK: mini_marsyard — map 260x180 px, origin (-6.5, -4.5), waypoints validated
+bash scripts/test/run_tests.sh
+== Unit tests (no ROS required) ==
+test_demo_yaml_is_valid (test_mission_planner.MissionFileTests.test_demo_yaml_is_valid) ... ok
+test_duplicate_waypoints_in_yaml_raise (test_mission_planner.MissionFileTests.test_duplicate_waypoints_in_yaml_raise) ... ok
+test_empty_waypoint_list_raises (test_mission_planner.MissionFileTests.test_empty_waypoint_list_raises) ... ok
+test_malformed_yaml_raises (test_mission_planner.MissionFileTests.test_malformed_yaml_raises) ... ok
+test_missing_file_raises (test_mission_planner.MissionFileTests.test_missing_file_raises) ... ok
+test_yaml_return_to_base_must_be_last (test_mission_planner.MissionFileTests.test_yaml_return_to_base_must_be_last) ... ok
+test_abort_and_resume (test_mission_planner.MissionPlannerStateTests.test_abort_and_resume) ... ok
+test_abort_is_idempotent_from_terminal_state (test_mission_planner.MissionPlannerStateTests.test_abort_is_idempotent_from_terminal_state) ... ok
+test_battery_low_is_terminal_and_cannot_resume (test_mission_planner.MissionPlannerStateTests.test_battery_low_is_terminal_and_cannot_resume) ... ok
+test_cannot_advance_before_start (test_mission_planner.MissionPlannerStateTests.test_cannot_advance_before_start) ... ok
+test_complete_with_warning (test_mission_planner.MissionPlannerStateTests.test_complete_with_warning) ... ok
+test_completion_sets_terminal_state (test_mission_planner.MissionPlannerStateTests.test_completion_sets_terminal_state) ... ok
+test_loop_restarts_after_last_waypoint (test_mission_planner.MissionPlannerStateTests.test_loop_restarts_after_last_waypoint) ... ok
+test_mark_reached_advances_to_next_waypoint (test_mission_planner.MissionPlannerStateTests.test_mark_reached_advances_to_next_waypoint) ... ok
+test_no_retries_fails_immediately (test_mission_planner.MissionPlannerStateTests.test_no_retries_fails_immediately) ... ok
+test_pause_keeps_position_and_resume_continues (test_mission_planner.MissionPlannerStateTests.test_pause_keeps_position_and_resume_continues) ... ok
+test_retry_then_failure (test_mission_planner.MissionPlannerStateTests.test_retry_then_failure) ... ok
+test_start_only_from_idle (test_mission_planner.MissionPlannerStateTests.test_start_only_from_idle) ... ok
+test_summary_contains_progress_and_lists (test_mission_planner.MissionPlannerStateTests.test_summary_contains_progress_and_lists) ... ok
+test_duplicate_ids_are_rejected (test_mission_planner.MissionPlannerValidationTests.test_duplicate_ids_are_rejected) ... ok
+test_empty_mission_is_rejected (test_mission_planner.MissionPlannerValidationTests.test_empty_mission_is_rejected) ... ok
+test_negative_retries_are_rejected (test_mission_planner.MissionPlannerValidationTests.test_negative_retries_are_rejected) ... ok
+test_non_integer_retries_are_rejected (test_mission_planner.MissionPlannerValidationTests.test_non_integer_retries_are_rejected) ... ok
+test_return_to_base_accepts_base (test_mission_planner.MissionPlannerValidationTests.test_return_to_base_accepts_base) ... ok
+test_return_to_base_requires_base (test_mission_planner.MissionPlannerValidationTests.test_return_to_base_requires_base) ... ok
+test_return_to_base_requires_base_last (test_mission_planner.MissionPlannerValidationTests.test_return_to_base_requires_base_last) ... ok
+test_boolean_coordinate_is_rejected (test_mission_planner.WaypointValidationTests.test_boolean_coordinate_is_rejected) ... ok
+test_empty_id_is_rejected (test_mission_planner.WaypointValidationTests.test_empty_id_is_rejected) ... ok
+test_from_dict_parses_numbers_and_defaults (test_mission_planner.WaypointValidationTests.test_from_dict_parses_numbers_and_defaults) ... ok
+test_from_dict_requires_x_and_y (test_mission_planner.WaypointValidationTests.test_from_dict_requires_x_and_y) ... ok
+test_non_finite_coordinates_are_rejected (test_mission_planner.WaypointValidationTests.test_non_finite_coordinates_are_rejected) ... ok
+test_non_positive_timeout_is_rejected (test_mission_planner.WaypointValidationTests.test_non_positive_timeout_is_rejected) ... ok
+test_non_positive_tolerance_is_rejected (test_mission_planner.WaypointValidationTests.test_non_positive_tolerance_is_rejected) ... ok
+test_valid_waypoint_uses_defaults (test_mission_planner.WaypointValidationTests.test_valid_waypoint_uses_defaults) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.007s
+
+OK
+
+ROS 2 not found: integration and hardware tests were not run.
+bash scripts/test/lint.sh
+Python: 16 file(s), 0 error(s)
+Bash: 11 file(s), 0 error(s)
+YAML: 5 file(s), 0 error(s)
+XML/URDF/SDF: 6 file(s), 0 error(s)
+JSON: 8 file(s), 0 error(s)
+
+OK: all syntax checks passed
+
+ruff not installed: skipped (optional; pip install ruff).
+
+xacro not installed: skipped (install ros-jazzy-xacro).
+
+shellcheck not installed: skipped (install it for stricter Bash checks).
+
+== git whitespace check ==
+
+OK: lint checks completed
+OK: validación completa

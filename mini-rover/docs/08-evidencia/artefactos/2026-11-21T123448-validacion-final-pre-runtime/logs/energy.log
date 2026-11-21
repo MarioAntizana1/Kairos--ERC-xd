@@ -1,0 +1,73 @@
+python3 scripts/energy/calculo_energia.py
+# Energy budget (preliminary)
+
+## Average loads
+| Load | Power (W) |
+|---|---:|
+| Raspberry Pi 5 8 GB (at 5 V rail) | 4.00 |
+| NVMe SSD (optional) (at 5 V rail) | 1.50 |
+| Camera Module 3 (at 5 V rail) | 1.25 |
+| 2D LiDAR (optional) (at 5 V rail) | 0.50 |
+| MCU / flight controller (at 5 V rail) | 0.50 |
+| RC link / telemetry (at 5 V rail) | 0.30 |
+| Pi 5 fan (at 5 V rail) | 0.30 |
+| 5 V rail total at battery (converter losses included) | 9.28 |
+| 6 steering servos (average) | 3.30 |
+| **Electronics subtotal** | **12.58** |
+| **Cruise (electronics + drive)** | **20.44** |
+| **10 deg slope (electronics + drive)** | **27.25** |
+
+## Drive model
+| Quantity | Value |
+|---|---:|
+| Rolling force | 4.71 N |
+| Slope force (10 deg) | 10.22 N |
+| Flat mechanical power | 1.41 W |
+| Slope mechanical power | 4.48 W |
+| Motor no-load power (6 motors) | 4.32 W |
+
+## Mission energy
+| Profile | Average (W) | Energy (Wh) |
+|---|---:|---:|
+| Demo 20 min | 18.71 | 6.24 |
+| RNF-06 30 min | 18.71 | 9.36 |
+| Extended 45 min | 18.37 | 13.78 |
+| Target 60 min | 18.37 | 18.37 |
+
+## Battery options (80 % DoD)
+| Pack | Cells | Energy (Wh) | Usable (Wh) | Runtime (h) | 45 min missions | Cell current (A) |
+|---|---:|---:|---:|---:|---:|---:|
+| 2S1P | 2 | 25.2 | 20.2 | 1.10 | 1.5 | 2.55 |
+| 2S2P | 4 | 50.4 | 40.3 | 2.19 | 2.9 | 1.28 |
+| 2S3P | 6 | 75.6 | 60.5 | 3.29 | 4.4 | 0.85 |
+
+## Solar balance
+| Quantity | Value |
+|---|---:|
+| Panel STC power (4 x 7.2 V x 0.6 A) | 17.28 W |
+| Effective at noon if 600 mA is Imp | 11.66 W |
+| Effective at noon if 600 mA is Isc | 9.33 W |
+| Daily energy, Imp case (3 h) | 35.0 Wh |
+| Daily energy, Isc case (3 h) | 28.0 Wh |
+| Deficit vs cruise (Isc case) | -11.11 W |
+| 45 min missions per day (Isc case) | 2.0 |
+| Required 2S charge voltage | 8.4 V |
+
+## Steering torque per wheel (static, SF = 2)
+| Mass (kg) | Normal force (N) | Torque (kg.cm) | MG90S 2.2 | MG995 10 | 20 kg class |
+|---:|---:|---:|---|---|---|
+| 4 | 6.54 | 3.20 | NO | OK | OK |
+| 6 | 9.81 | 4.80 | NO | OK | OK |
+| 8 | 13.08 | 6.40 | NO | OK | OK |
+| 10 | 16.35 | 8.00 | NO | MARGINAL | OK |
+| 12 | 19.62 | 9.60 | NO | MARGINAL | OK |
+
+## Fault-case peak
+| Quantity | Value |
+|---|---:|
+| Motors stalled | 72.0 W |
+| Servos stalled | 105.9 W |
+| Electronics | 9.3 W |
+| Total peak | 187.2 W |
+| Battery current (2S2P) | 26.0 A |
+| Current per cell (2S2P) | 13.0 A |

@@ -1,0 +1,31 @@
+{
+  "id": "EV-2026-11-21-01",
+  "date": "2026-11-21T17:30:09Z",
+  "slug": "validacion-local",
+  "operator": "mario",
+  "host": "Mario-laptop",
+  "os": "Linux-7.3.3-100.fc43.x86_64-x86_64-with-glibc2.42",
+  "kernel": "7.3.3-100.fc43.x86_64",
+  "architecture": "x86_64",
+  "python": "3.14.10",
+  "ros_distro": null,
+  "gazebo": null,
+  "commit": null,
+  "dirty": false,
+  "command": "make check",
+  "requirements": [
+    "RNF-09",
+    "RNF-11"
+  ],
+  "tests": [
+    "TC-01",
+    "TC-02",
+    "TC-03",
+    "TC-04",
+    "TC-05",
+    "TC-21"
+  ],
+  "result": "passed_with_limitations",
+  "notes": "Validacion local en Fedora 43 sin ROS 2. 32 pruebas unitarias OK; documentacion, assets y sintaxis OK. No se ejecutaron pruebas de integracion, simulacion ni hardware.",
+  "environment_limitations": "Host sin ROS 2, Gazebo, colcon ni Docker. La validacion de runtime requiere Ubuntu 24.04."
+}

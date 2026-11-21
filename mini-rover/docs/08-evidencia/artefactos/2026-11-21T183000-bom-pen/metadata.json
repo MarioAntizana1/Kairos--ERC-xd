@@ -1,0 +1,31 @@
+{
+  "id": "EV-2026-11-21-07",
+  "date": "2026-11-21T23:30:00Z",
+  "slug": "bom-pen",
+  "operator": "mario",
+  "host": "Mario-laptop",
+  "os": "Linux-7.3.3-100.fc43.x86_64-x86_64-with-glibc2.42",
+  "kernel": "7.3.3-100.fc43.x86_64",
+  "architecture": "x86_64",
+  "python": "3.14.10",
+  "ros_distro": null,
+  "gazebo": null,
+  "commit": null,
+  "dirty": true,
+  "command": "make check",
+  "requirements": [
+    "RNF-09",
+    "RNF-11"
+  ],
+  "tests": [
+    "TC-01",
+    "TC-02",
+    "TC-03",
+    "TC-04",
+    "TC-05",
+    "TC-21"
+  ],
+  "result": "passed_with_limitations",
+  "notes": "BOM base reescrita en PEN con precios de Peru: 25 lineas, subtotal S/ 2.520,08 y total S/ 2.646,08 con 5% de imprevistos. Pi 4/Argon reutilizadas; bom-peru.md y bom-peru.csv actualizados. 78 Markdown, 355 enlaces, 64 fuentes, 12 ADR, 34 pruebas unitarias y lint sin errores. Precios al 2026-11-21, sin stock reservado; BOM pendiente de aprobacion. No se ejecutaron ROS 2, Nav2, Gazebo ni hardware.",
+  "environment_limitations": "Host Fedora 43 sin ROS 2 ni Gazebo. La validacion de runtime requiere Ubuntu 24.04 + ROS 2 Jazzy + Gazebo Harmonic. Los precios y el stock deben confirmarse con los proveedores peruanos antes de comprar."
+}

@@ -1,0 +1,5 @@
+# Optional tools for documentation, static validation and lint on a host
+# without ROS 2. ROS 2 itself is installed from the official apt repository.
+PyYAML>=6.0
+xacro>=2.0
+ruff>=0.6

@@ -1,0 +1,1 @@
+run_id,environment,date,commit,controller,max_speed,success,waypoints_reached,total_waypoints,final_error_m,final_yaw_error_rad,duration_s,collisions,interventions,cpu_mean_pct,cpu_peak_pct,ram_peak_mb,temp_peak_c,battery_start_v,battery_end_v,notes
