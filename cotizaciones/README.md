@@ -75,7 +75,7 @@ por rama).
 | Tema | Estado | Dónde |
 |---|---|---|
 | ¿El mini-rover necesita su propio LiDAR? | Abierto: el único LiDAR va al rover principal. Si sí, +S/ 600 | §6.3 |
-| ¿Se acepta la pérdida de par y velocidad con 2S? | Abierto: ~51 rpm y ~28 kg·cm en vez de 83 rpm y 45 kg·cm | §6.5 |
+| ¿Se acepta la pérdida de par y velocidad con 2S? | Abierto: ~51 rpm y 0,24 m/s. Alternativas y costos en §6.6 (ruedas grandes gratis, boost S/ 25–55 o motor importado) | §6.6 |
 | BMS 2S de 25 A en Bracsan | A confirmar SKU y precio (referencia S/ 18 del 3S) | §4.4 |
 | Portafusible en Bracsan | A confirmar (referencia Falabella S/ 15,90) | §4.4 |
 | ¿Quién suelda el pack por punto? | Abierto: soldador Bracsan S/ 390, o pedirles que lo suelden | §6.2 |

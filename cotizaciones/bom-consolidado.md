@@ -398,6 +398,35 @@ Otras notas:
 - **Níquel y espaciadores:** 1 m de tira alcanza para un 2S4P; los 4 espaciadores
   cubren el arreglo 2×4.
 
+### 6.6 Alternativas de motor para el pack de 2S
+
+El **par no es el problema**: a 7,4 V el FIT0185 sigue dando ~28 kg·cm, de sobra
+para un rover de pocos kilos (con rueda de 90 mm son ~60 N por rueda). Lo que se
+pierde es **velocidad**: 0,24 m/s en vez de 0,39 m/s. Alternativas, de la más
+barata a la más cara:
+
+| Opción | Qué cambia | rpm @ 7,4 V | Velocidad (rueda 90 mm) | Par | Costo | Dónde |
+|---|---|---:|---:|---:|---|---|
+| **1. Dejar el FIT0185** | nada | ~51 | 0,24 m/s | ~28 kg·cm | S/ 0 | ya cotizado |
+| **2. Ruedas de 110–120 mm** | solo la impresión 3D | 51 | **0,30–0,32 m/s** (+22–33 %) | 28 kg·cm | S/ 0 | taller local |
+| **3. Elevador 7,4 → 12 V** | módulo boost para la tracción | 83 | **0,39 m/s** | 45 kg·cm | **S/ 25–55** | [MTLAB](https://mtlab.pe/producto/modulo-step-up-dc-dc-elevador-de-voltaje-150w-200w-400w/) |
+| 4. Pololu 25D 6 V 99:1 con encoder | motor de 6 V sobrealimentado | ~160 | 0,75 m/s (Nav2 lo limita) | ~11 kg·cm | importación, a cotizar | Pololu / Adafruit |
+| 5. FIT0492-A 12 V 50 rpm | motor más lento y **sin encoder** | ~31 | 0,15 m/s | ~31 kg·cm | S/ 69,90 | Electromanía |
+
+**Recomendación:** probar primero la **opción 2** (ruedas más grandes): es gratis
+porque las ruedas se imprimen en local, no toca la electrónica y el par sobra. Si
+aun así se necesita la velocidad original, la **opción 3** recupera los 12 V con un
+módulo de S/ 25–55; ojo con la corriente de arranque (dos motores pueden pedir
+~14 A a 12 V), así que el módulo debe ser de **200–400 W** y se mantiene el
+BTS7960 como driver. La opción 4 es la única "de fábrica" para 2S, pero es
+importada, más cara y deja el motor de 6 V al 123 % de su tensión.
+
+> **Descartado:** volver a 3S solo para la tracción (lo descartó el equipo) y los
+> TT de 6 V tipo FIT0450: dan 0,8 kg·cm, insuficientes para este chasis.
+
+**Ajuste obligatorio si se queda en 2S:** el `max_vel_x` de Nav2 debe bajar a
+~0,20 m/s y el fusible subir a 20–25 A (ver §6.5).
+
 ---
 
 ## 7. Exclusiones, supuestos y avisos
