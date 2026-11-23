@@ -43,6 +43,40 @@ cd mini-rover
 make check
 ```
 
+## Cómo trabajar en el repositorio
+
+El repositorio se organiza en tres carpetas de trabajo independientes:
+
+| Carpeta | Proyecto |
+|---|---|
+| [`mini-rover/`](mini-rover/) | **Mini-rover** — navegación autónoma |
+| [`drone/`](drone/) | **Drone** — payload de visión estéreo + ToF de piso |
+| [`rover-principal/`](rover-principal/) | **Rover-principal** — visión del rover grande |
+
+Las reglas comunes para personas y agentes están en [`AGENTS.md`](AGENTS.md), y
+las reglas propias de cada subproyecto, en su propio `AGENTS.md`. Las skills
+compartidas viven en [`.dsh/skills/`](.dsh/skills/) (ver
+[`.dsh/README.md`](.dsh/README.md) y [`.dsh/SOURCES.md`](.dsh/SOURCES.md)).
+
+El BOM de los tres subproyectos, consolidado por proveedor con cantidades totales
+y precios para pedir cotizaciones, está en [`cotizaciones/`](cotizaciones/).
+
+## Cotización general
+
+La **cotización general** reúne el BOM de los tres subproyectos agrupado por
+proveedor, con cantidades totales, precios, stock al 2026-11-21 y enlaces, lista
+para enviar la solicitud a cada empresa:
+
+| Documento | Para qué sirve |
+|---|---|
+| [`cotizaciones/bom-consolidado.md`](cotizaciones/bom-consolidado.md) | Documento principal: 43 líneas, 55 unidades y ~S/ 7.135,68 repartidos en 11 proveedores |
+| [`cotizaciones/bom-consolidado.csv`](cotizaciones/bom-consolidado.csv) | La misma información en tabla, para filtrar o adjuntar |
+| [`cotizaciones/solicitud-plantilla.md`](cotizaciones/solicitud-plantilla.md) | Correo y WhatsApp listos, más la tabla de seguimiento de respuestas |
+
+Los precios son de catálogo web consultado el 2026-11-21 y **no autorizan compra**;
+el alcance, las exclusiones y la copia de BOM que no se suma están en
+[`cotizaciones/README.md`](cotizaciones/README.md).
+
 ## Enlaces rápidos
 
 - [Investigación de sensores del rover en Perú](rover-principal/docs/01-investigacion/sensores-peru-2026-11-21.md)

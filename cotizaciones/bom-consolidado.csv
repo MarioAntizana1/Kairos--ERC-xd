@@ -1,0 +1,45 @@
+proveedor,item,modelo_sku,proyecto,cantidad,precio_unit_pen,tipo_precio,subtotal_pen,stock_2026_11_21,url,nota
+The Pi Box,Fuente 27 W USB-C,5.1 V 5 A oficial,MR+DR,2,67.00,verificado,134.00,En stock,https://thepibox.pe/shop/fuente-de-poder-27-w-raspberry-pi-3458,Pruebas de banco
+The Pi Box,Raspberry Pi 5 8 GB,Placa oficial,DR,1,768.00,verificado,768.00,En stock,https://thepibox.pe/shop/cmp-rp-010-raspberry-pi-5-de-8gb-3444,Incluye IGV
+The Pi Box,Camera Module 3 Standard,IMX708,DR,2,140.00,verificado,280.00,En stock,https://thepibox.pe/shop/cam-rp-006-camara-v3-estandar-raspberry-pi-3368,Incluye cable 15-22 de 200 mm
+The Pi Box,HAT+ M.2,Oficial 2242,DR,1,60.00,verificado,60.00,Por confirmar,https://thepibox.pe/shop/exp-rp-006-hat-m-2-raspberry-pi-3475,Confirmar unidad
+The Pi Box,Active Cooler,Oficial,DR,1,29.90,verificado,29.90,En stock,https://thepibox.pe/shop/enf-rp-001-active-cooler-raspberry-pi-3454,
+The Pi Box,Accesorios de caja,ventilador/rejilla/espuma,MR,1,30.00,estimado,30.00,Estimado,https://thepibox.pe/,Cotizar o comprar en ferreteria
+Electromanía,LiDAR 2D 360,RPLIDAR A1M8-R6 12 m,MR,1,600.00,verificado,600.00,Quedaban 12,https://www.electromania.pe/producto/escaner-lidar-de-360-grados-rplidar-a1m8-r6-12m/,
+Electromanía,Motorreductor 12 V con encoder,FIT0185 83 rpm 45 kg-cm,MR,2,145.00,verificado,290.00,En stock,https://www.electromania.pe/producto/motorreductor-de-metal-con-encoder-12v-83rpm-45kg/,Sustituto del 50 rpm
+Electromanía,ToF de piso,TFmini Plus 12 m UART/I2C IP65,DR+RP,2,330.00,verificado,660.00,Solo quedan 8,https://www.electromania.pe/producto/tfmini-plus-sensor-lidar-tof-de-distancia-de-punto-unico-12m-uart-i2c-ip65/,Uno por vehiculo
+Electromanía,Cable FPC 22-15,300 mm,DR,2,12.50,verificado,25.00,En stock,https://www.electromania.pe/producto/cable-para-camara-raspberry-pi-5-300mm/,Repuesto
+Electromanía,Monitor de bateria,INA219 I2C,MR,1,12.50,verificado,12.50,En stock,https://www.electromania.pe/producto/modulo-sensor-bidireccional-de-monitorizacion-de-corriente-potencia-mcu-219-ina219-i2c/,
+Electromanía,Regulador DC-DC,XL4005 5 A,MR,2,6.59,verificado,13.18,En stock,https://www.electromania.pe/producto/regulador-de-voltaje-dc-dc-step-down-xl4005e1-5a/,Dos modulos
+Electromanía,Fusibles de vidrio,surtido 250 V,MR,1,12.00,verificado,12.00,En stock,https://www.electromania.pe/producto/100x-fusibles-de-vidrio-250v/,
+Electromanía,Parada de emergencia,seta enclavada 660 V 10 A,MR,1,8.00,verificado,8.00,En stock,https://www.electromania.pe/producto/boton-de-parada-de-emergencia-ac660v-10a/,
+Electromanía,Capacitor 1000 uF,low ESR,DR,1,5.00,estimado,5.00,Estimado,https://www.electromania.pe/,Proteccion riel 5 V
+Electromanía,Dupont/JST/termorretractil,arnes del dron,DR,1,20.00,estimado,20.00,Estimado,https://www.electromania.pe/,
+Naylamp,Driver BTS7960,43 A,MR,2,45.00,verificado,90.00,En stock,https://naylampmechatronics.com/drivers/590-driver-puente-h-bts7960-43a.html,
+Naylamp,Perfil V-Slot 2040,barra 3.2 m,MR,1,160.00,verificado,160.00,En stock,https://naylampmechatronics.com/perfiles-de-aluminio/688-perfil-v-slot-2040-l3200mm.html,El 2020 esta agotado
+Naylamp,Aisladores de vibracion,silicona M3,DR,1,25.00,estimado,25.00,Estimado,https://naylampmechatronics.com/,4-8 puntos
+Naylamp,Tornilleria e insertos,M2.5/M3,DR,1,35.00,estimado,35.00,Estimado,https://naylampmechatronics.com/72-tornillos-y-tuercas,
+Naylamp,Tornillos y tuercas,M3/M4 y T-nuts,MR,1,50.00,estimado,50.00,Estimado,https://naylampmechatronics.com/72-tornillos-y-tuercas,
+Falabella,Bateria LiFePO4 12 V 10 Ah,Goldenmate BMS IP67,MR,1,239.00,verificado,239.00,Importada EE.UU.,https://www.falabella.com.pe/falabella-pe/product/155618417/bateraa-lifepo4-goldenmate-12v-10ah-bms-ip67-5000-ciclos,
+Falabella,SSD SATA 2.5 256 GB,ADATA SU650,MR,1,185.90,verificado,185.90,Marketplace,https://www.falabella.com.pe/falabella-pe/product/140636555/UNIDAD-DE-ESTADO-SOLIDO-SSD-25-SATA-256GB-ADATA-SU650,Despacho a domicilio
+Falabella,SSD NVMe 128 GB,M.2 2242,DR,1,149.80,verificado,149.80,Marketplace,https://www.falabella.com.pe/falabella-pe/product/159932959/ssd-kingspec-128gb-m-2-2242-nvme-pcie-3-0-x2-bm-key,Vendedor oyetec
+Falabella,microSD 64 GB A2,SanDisk Extreme Pro,MR+DR,2,64.90,verificado,129.80,Marketplace,https://www.falabella.com.pe/falabella-pe/product/159238184/tarjeta-de-memoria-microsd-64gb-extreme-pro-4k-hdr-a2-v60-con-adaptador,Respaldo
+Falabella,Desconectador de bateria,12-48 V,MR,1,46.90,verificado,46.90,Marketplace,https://www.falabella.com.pe/falabella-pe/product/157324117/interruptor-de-bateria-12v-48v-universal-para-auto-autocaravana-y-barco,
+Falabella,Caja USB 3.0 para SSD,2.5 pulgadas,MR,1,24.80,verificado,24.80,Marketplace,https://www.falabella.com.pe/falabella-pe/product/159275261/case-externo-para-disco-duro-hdd-ssd-2-5-pulgadas-sata-usb-3-0-5gbps-con-cable-y-adaptador-tipo-c,
+Falabella,Portafusibles,linea mini cuchilla 12 A,MR,1,15.90,verificado,15.90,Marketplace,https://www.falabella.com.pe/falabella-pe/product/155449922/1-juego-de-portafusibles-en-linea-mini-tipo-cuchilla-impermeable-con-fusible-10a,
+Falabella,Cargador LiFePO4,14.6 V 5-10 A por cotizar,MR,1,200.00,estimado,200.00,Estimado,https://www.falabella.com.pe/falabella-pe/product/155603105/cargador-bateraa-lifepo4-lvyuan-14-6v-20a-smart-12v,LVYUAN 20 A cuesta 359
+Memory Kings,Camara web 4K,Elgato Facecam 4K 040866,RP,2,828.00,verificado,1656.00,Mas de 10,https://www.memorykings.pe/producto/354472/camara-webcam-elgato-facecam-4k-uhd-60fps,IGV incluido; flete no
+Electronics Peru,IMU 9-DOF,BNO085 AHRS,MR,1,100.00,verificado,100.00,En stock,https://www.electronicsperu.com/product/sensor-imu-9dof-bno085-ahrs-para-ar-vr-y-robotica/,Tienda en Ica
+Print3D.pe,Ruedas 90 mm,buje PETG + banda TPU,MR,4,25.00,estimado,100.00,Estimado,https://print3d.pe/,Cotizar por pieza
+Print3D.pe,Placas estructurales,PETG o aluminio,MR,1,80.00,estimado,80.00,Estimado,https://print3d.pe/,
+Print3D.pe,Soportes del dron,baseline 150 mm + bandeja + ventana ToF,DR,1,120.00,estimado,120.00,Estimado,https://print3d.pe/,
+Importacion ZoneFPV,UBEC 5 V 5 A,Matek BEC12S-PRO,DR,1,120.00,estimado,120.00,Cotizar,https://zonefpv.com/products/matek-bec12s-pro-9-55v-to-5v-8v-12v-5a-bec-voltage-regulator-fpv-drone,Landed estimado
+Naylamp o Electromanía,Cable y conectores,XT60/XT30 14-18 AWG,MR,1,80.00,estimado,80.00,Estimado,https://naylampmechatronics.com/conectores-electricos/749-conector-xt60-macho.html,Incluye termorretractil
+Naylamp o Electromanía,Conectores y cable,XT60/XT30 18-20 AWG + fusible,DR,1,60.00,estimado,60.00,Estimado,https://naylampmechatronics.com/216-conectores-xt,
+Taller local,Montaje rigido de vision,barra de aluminio + soportes,RP,1,250.00,estimado,250.00,Sin cotizar,,A medida
+Tienda local,Cables USB 3.0 + hub,certificados,RP,1,150.00,estimado,150.00,Sin cotizar,,
+Varios,Repuestos,fusibles/cable/conectores,MR,1,50.00,estimado,50.00,Estimado,,Critico para la demo
+Varios,Repuestos,fusibles/cable/conectores,DR,1,30.00,estimado,30.00,Estimado,,
+Varios,USB-C corto + ferrita,alimentacion Pi 5,DR,1,25.00,estimado,25.00,Estimado,,
+Varios,Termicos/espuma/velcro,almohadilla y fijacion,DR,1,15.00,estimado,15.00,Estimado,,
+TOTAL,,,MR+DR+RP,55,5690.68,verificado,5690.68,,,Estimado adicional 1445.00; total 7135.68
