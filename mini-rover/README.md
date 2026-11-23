@@ -121,7 +121,7 @@ La guía detallada está en [`docs/05-implementacion/guia-instalacion.md`](docs/
 | Cámara | Camera Module V2.1 (CSI) + USB opcional | Teleoperación; el estéreo CSI + USB es solo un spike (ADR-0011) |
 | Conectividad | Wi-Fi/Ethernet; LilyGO T-SIM7600X LTE/GNSS opcional | Telemetría remota; no control (ADR-0012) |
 
-Lista completa y presupuesto en soles (PEN) en [`docs/04-diseno/bom.md`](docs/04-diseno/bom.md): **S/ 2.646,08** con 5 % de imprevistos, pendiente de aprobación. Los precios son de Perú a 2026-11-21 y deben cotizarse antes de comprar. El detalle de proveedores y alternativas está en [`docs/04-diseno/bom-peru.md`](docs/04-diseno/bom-peru.md).
+Lista completa y presupuesto en soles (PEN) en [`docs/04-diseno/bom.md`](docs/04-diseno/bom.md): **S/ 2.670,02** con 5 % de imprevistos, pendiente de aprobación. Los precios son de Perú a 2026-11-21 y deben cotizarse antes de comprar. El detalle de proveedores y alternativas está en [`docs/04-diseno/bom-peru.md`](docs/04-diseno/bom-peru.md).
 
 > **Inventario de facultad:** parte del material ya está disponible (Pi 4,
 > TB6612, IMU, ToF, cámara, LiPo y paneles), pero no cubre LiDAR, encoders ni

@@ -91,7 +91,7 @@ organización. Si no hay posición, la nube queda en un frame local y se registr
 la limitación (OQ-12). El ToF de piso da la altura.
 
 **¿Cuánto cuesta?**
-Núcleo de visión S/ 1.403; kit de banco S/ 1.564,80; kit completo S/ 2.341,08
+Núcleo de visión S/ 1.403; kit de banco S/ 1.497,80; kit completo S/ 1.805,36
 con 5 % de contingencia. Precios del 2026-11-21; no autoriza compra.
 
 **¿Es legal volar?**

@@ -87,12 +87,31 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y 
 - Evidencia EV-2026-11-21-07: validación documental de la BOM en soles y del
   total S/ 2.646,08.
 
+### Cambiado
+
+- BOM en soles reescrita el **2026-11-23**: subtotal **S/ 2.542,88** y
+  **S/ 2.670,02** con 5 % de imprevistos. Se sustituye la batería LiFePO4 y su
+  cargador de red por un **pack Li-ion 2S4P** de 8 celdas (7,4 V / 14 Ah /
+  103,6 Wh) con celdas de Bracsan, soldadura por punto y carga con **TP5100 +
+  2 paneles de 6 V en serie**.
+- Se eliminan el SSD SATA, la caja USB y el HAT M.2: el arranque va por
+  **microSD**. También sale el perfil V-Slot 2040 (ya se tenía).
+- Se añade un **boost DC-DC de 400 W** en el riel de tracción para volver a
+  12 V (83 rpm y 0,39 m/s); sin él la tracción queda en ~51 rpm y 0,24 m/s.
+- Se añaden un **ToF TFmini Plus** y una **webcam Logitech Brio 4K** (la Pi 4 no
+  tiene doble CSI, así que la visión va por USB).
+- Ruedas y placas pasan a **impresión 3D local**; el portafusibles se mueve a
+  Bracsan. El fusible se recalcula a 20–25 A por la corriente del pack de 2S.
+- `check_docs.py` sigue en verde (78 documentos, 356 enlaces).
+- El consolidado de compras de los tres subproyectos vive en
+  `cotizaciones/bom-consolidado.md`, en la raíz del workspace.
+
 ### Pendiente
 
 - Confirmar estado del Pi 4, acceso al CSI con la carcasa Argon,
   especificaciones de los motores 10F125, modelo/variante del LilyGO,
   estado/cargador de la LiPo y Vmp/Imp de los paneles.
-- Aprobar la BOM revisada (**S/ 2.646,08**) antes de comprar y confirmar stock.
+- Aprobar la BOM revisada (**S/ 2.670,02**) antes de comprar y confirmar stock.
 - Ejecutar los spikes ADR-0011 (CSI + USB) y ADR-0012 (LTE/GNSS).
 - Validación de integración en Ubuntu 24.04 + ROS 2 Jazzy + Gazebo Harmonic.
 - Ejecución de la misión de 5 waypoints y registro de rosbag2.

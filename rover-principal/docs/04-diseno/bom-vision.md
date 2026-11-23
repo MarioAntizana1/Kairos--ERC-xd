@@ -1,24 +1,36 @@
-# BOM de visión — prototipo local (2026-11-21)
+# BOM de visión — prototipo local
 
-> Estado: Estimado · Versión: 0.1 · Revisión: 2026-11-21 · Responsable: Hardware
+> Estado: Estimado · Versión: 0.2 · Revisión: **2026-11-23** · Responsable: Hardware
 >
-> Cotización de la combinación **V-A** (2 × Elgato Facecam 4K + 1 × TFmini Plus)
-> y alternativas. Precios en soles (PEN) salvo A5, en USD; con IGV cuando la
-> tienda lo indica. **No autoriza compra.** La aprobación es OQ-V03.
+> Cotización de la combinación **V-A** (2 × Elgato Facecam 4K + **2 × TFmini Plus**
+> + **2 × LiDAR RPLIDAR A1M8** + montaje + cables). Precios en soles (PEN) salvo A5,
+> en USD; con IGV cuando la tienda lo indica. **No autoriza compra.** La aprobación
+> es OQ-V03.
+>
+> **Cambios del 2026-11-23:** el LiDAR 360 del rover grande pasa a **dos unidades**
+> (cobertura frontal y posterior, con alternativa de tres) y el ToF de punto único
+> pasa a **dos unidades**, una por unidad de visión.
 
 ## 1. BOM recomendada (V-A)
 
 | # | Ítem | Modelo / SKU | Proveedor | Cant. | Precio unit. | Subtotal | Stock | Fuente |
 |---:|---|---|---|---:|---:|---:|---|---|
-| 1 | Cámara web 4K | Elgato Facecam 4K · 040866 / 10WAF9901 | Memory Kings | 2 | S/ 828,00 | S/ 1 656,00 | > 10 | F-52 |
-| 2 | ToF de punto único | Benewake TFmini Plus · J006-SEN0309 | Electromanía | 1 | S/ 330,00 | S/ 330,00 | 8 | F-56 |
-| 3 | Montaje rígido (barra + soportes) | A medida, aluminio | Taller local | 1 | ~S/ 250,00 | ~S/ 250,00 | — | Supuesto |
-| 4 | Cables USB 3.0 + hub alimentado | Certificados | Tienda local | 1 | ~S/ 150,00 | ~S/ 150,00 | — | Supuesto |
-| | **Total estimado** | | | | | **~S/ 2 386,00** | | |
+| 1 | Cámara web 4K | Elgato Facecam 4K · 040866 / 10WAF9901 | Memory Kings | 2 | S/ 828,00 | S/ 1.656,00 | > 10 | F-52 |
+| 2 | LiDAR 2D 360° | RPLIDAR A1M8-R6 · 12 m (Slamtec) | Electromanía | 2 | S/ 600,00 | S/ 1.200,00 | Quedaban 12 | F-56 |
+| 3 | ToF de punto único | Benewake TFmini Plus · J006-SEN0309 | Electromanía | 2 | S/ 330,00 | S/ 660,00 | 8 | F-56 |
+| 4 | Montaje rígido (barra + soportes) | A medida, aluminio | Taller local | 1 | ~S/ 250,00 | ~S/ 250,00 | — | Supuesto |
+| 5 | Cables USB 3.0 + hub alimentado | Certificados | Tienda local | 1 | ~S/ 150,00 | ~S/ 150,00 | — | Supuesto |
+| | **Total estimado** | | | | | **~S/ 3.916,00** | | |
 
-> **Nota:** el total incluye montaje y cables estimados. Memory Kings no incluye
-> flete; Electromanía cobra envío según destino. No se incluyó seguro ni
-> garantía extendida.
+> **Nota:** incluye montaje y cables estimados. Memory Kings no incluye flete;
+> Electromanía cobra envío según destino. No se incluyó seguro ni garantía
+> extendida.
+>
+> **Dos LiDAR:** hay que definir la fusión en ROS 2 (dos `scan`, `laser_filters` o
+> `ira_laser_tools`) y los frames de cada uno antes de montar.
+>
+> **¿Por qué dos ToF?** El ToF de punto único da la referencia métrica de altura o
+> distancia al suelo por unidad de visión; con dos cámaras se pide uno por unidad.
 
 ## 2. Alternativas
 
@@ -36,18 +48,20 @@
 
 | Escenario | Composición | Total estimado |
 |---|---|---:|
-| Mínimo local | 2 × Elgato + TFmini-S + montaje/cables | ~S/ 2 355 |
-| **Recomendado local** | **2 × Elgato + TFmini Plus + montaje/cables** | **~S/ 2 386** |
-| Con LIDAR-Lite | 2 × Elgato + LIDAR-Lite + montaje/cables | ~S/ 2 906 |
-| Con VL53L8CX importado | 2 × Elgato + TFmini Plus + VL53L8CX + montaje/cables | ~S/ 2 600–3 000 |
+| Mínimo local | 2 × Elgato + TFmini-S + 1 × A1M8 + montaje/cables | ~S/ 2.955 |
+| **Recomendado local** | **2 × Elgato + 2 × TFmini Plus + 2 × A1M8 + montaje/cables** | **~S/ 3.916** |
+| Con LIDAR-Lite | 2 × Elgato + 2 × TFmini Plus + 1 × A1M8 + LIDAR-Lite + montaje/cables | ~S/ 4.166 |
+| Alternativa 3 LiDAR | Recomendado + 1 × A1M8 (tercero) | ~S/ 4.516 |
 
 ## 4. Condiciones
 
-- Precios consultados el **2026-11-21**; pueden cambiar.
+- Precios consultados el **2026-11-21**; pueden cambiar. La revisión de
+  cantidades (2 LiDAR, 2 ToF) es del **2026-11-23**.
 - Memory Kings: precio incluye IGV; flete no incluido.
 - Electromanía: stock online mostrado en la ficha; verificar el día de compra.
-- Naylamp: envío gratis a todo el Perú por compras > S/ 200 (condiciones de la
-  tienda).
+  El LiDAR declaraba 12 unidades y el ToF 8: la compra de 2 + 2 entra, pero hay
+  que confirmar reserva.
+- Naylamp: envío gratis a todo el Perú por compras > S/ 200 (condiciones de la tienda).
 - Importación: no incluye envío, aduana ni IGV.
 - Los montajes y cables son **estimaciones** de planificación, no cotizaciones.
 
@@ -57,3 +71,5 @@
   [`../01-investigacion/sensores-peru-2026-11-21.md`](../01-investigacion/sensores-peru-2026-11-21.md).
 - Fuentes: [`../01-investigacion/fuentes.md`](../01-investigacion/fuentes.md).
 - Preguntas: [`../00-gobierno/registro-decisiones.md`](../00-gobierno/registro-decisiones.md).
+- Consolidado de compras de los tres subproyectos:
+  [`../../../cotizaciones/bom-consolidado.md`](../../../cotizaciones/bom-consolidado.md).

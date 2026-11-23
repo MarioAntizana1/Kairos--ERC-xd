@@ -1,5 +1,15 @@
 # BOM de electrónica cotizada en Perú (mini demo)
 
+> ⚠️ **Documento heredado, no vigente.** Es la copia de la BOM del **mini demo** que
+> se trajo a esta sección como referencia metodológica. El mini-rover cambió su
+> energía y su almacenamiento el **2026-11-23** (pack Li-ion 2S4P en lugar de
+> LiFePO4, sin SSD ni HAT, con boost de tracción), así que este archivo quedó
+> desfasado. La BOM vigente del rover grande es
+> [`bom-vision.md`](bom-vision.md); la del mini demo está en
+> `mini-rover/docs/04-diseno/bom-peru.md`; y el consolidado de compras de los tres
+> subproyectos, en [`../../../cotizaciones/bom-consolidado.md`](../../../cotizaciones/bom-consolidado.md).
+> No se cotiza desde aquí.
+>
 > Estado: Estudio de abastecimiento · Versión: 0.1 · Revisión: 2026-11-21 · Responsable: rol de Hardware
 >
 > **No autoriza compra.** Precios en soles peruanos (PEN) con IGV, consultados el

@@ -10,9 +10,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 CSV_PATH = ROOT / "docs/04-diseno/bom-peru.csv"
 
-EXPECTED_BASE = 2229.60
+EXPECTED_BASE = 1719.39
 CONTINGENCY_RATE = 0.05
-EXPECTED_TOTAL = 2341.08
+EXPECTED_TOTAL = 1805.36
 TOLERANCE = 0.02
 
 

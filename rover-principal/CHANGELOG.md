@@ -24,6 +24,17 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y 
 - Fuentes F-52 a F-71 con URL y fecha de acceso.
 - Skills del proyecto: `rover-vision`, `documentacion-trazabilidad` e `investigacion-proveedores-peru`.
 
+### Cambiado
+
+- BOM de visión revisada el **2026-11-23**: la combinación V-A pasa a
+  **2 × Elgato Facecam 4K + 2 × TFmini Plus + 2 × RPLIDAR A1M8** más montaje y
+  cables, con total **~S/ 3.916,00**. Alternativa aprobada: 3 LiDAR
+  (~S/ 4.516).
+- `bom-vision.csv` y `bom-vision.md` actualizados. El segundo LiDAR exige
+  definir la fusión de los dos `scan` en ROS 2 antes de montar.
+- `docs/04-diseno/bom-peru.md` queda marcado como **documento heredado** del
+  mini demo: no se cotiza desde ahí.
+
 ### Notas
 
 - No se compró hardware. Los precios y el stock son una fotografía del 2026-11-21.

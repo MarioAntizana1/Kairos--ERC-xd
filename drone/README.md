@@ -22,7 +22,7 @@ Precios en soles peruanos (PEN) con IGV, consultados el **2026-11-21** en catál
 |---|---|---:|
 | **Núcleo de visión** | Pi 5 8 GB, 2 × Camera Module 3 Standard, ToF de piso TFmini Plus 12 m, 2 cables FPC de 300 mm | **S/ 1.403,00** |
 | **Núcleo operativo de banco** | Lo anterior + Active Cooler, fuente oficial 27 W y microSD 64 GB A2 | **S/ 1.564,80** |
-| **Kit completo (banco + vuelo)** | Lo anterior + HAT+ M.2, SSD NVMe 128 GB, UBEC 5 V/5 A, montaje, cableado y 5 % de contingencia | **S/ 2.341,08** |
+| **Kit completo (banco + vuelo)** | Lo anterior + regulador XL4005, montaje, cableado y 5 % de contingencia | **S/ 1.805,36** |
 | **ToF local ≤4 m** | VL53L1X (4 m) en lugar del TFmini Plus; **no sirve a 6 m** | **− S/ 255** → S/ 2.073,33 |
 | **ToF 8×8 ≤4 m** | VL53L5CX importado (64 zonas, 4 m); **no sirve a 6 m** | **− S/ 140** → S/ 2.194,08 |
 

@@ -80,7 +80,7 @@ sin envío y sin aduanas.
 | Portafusible en Bracsan | A confirmar (referencia Falabella S/ 15,90) | §4.4 |
 | ¿Quién suelda el pack por punto? | Abierto: soldador Bracsan S/ 390, o pedirles que lo suelden | §6.2 |
 | Regulador del dron | XL4005 local (S/ 6,59); el Matek queda como alternativa | §6.4 |
-| BOM de origen desactualizados | Lista exacta de ediciones pendientes | §8 |
+| BOM de origen | Ya actualizados el 2026-11-23; queda la bitácora y el registro de fuentes | §8 |
 
 ## Estado de los precios
 

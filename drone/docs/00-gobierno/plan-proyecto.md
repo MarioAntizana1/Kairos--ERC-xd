@@ -11,7 +11,7 @@
 | Inicio | 2026-11-21 (T0) |
 | Duración estimada | 14–18 semanas hasta demo de banco; 20–24 hasta vuelo |
 | Equipo mínimo | 2–3 personas (visión, hardware, QA/seguridad) |
-| Presupuesto hardware | S/ 2.341,08 (kit completo, con 5 %); S/ 2.073,33 si se baja a un ToF de 4 m |
+| Presupuesto hardware | S/ 1.805,36 (kit completo, con 5 %); S/ 1.537,61 si se baja a un ToF de 4 m |
 | Metodología | SDLC iterativo + DSR, sprints de 2 semanas |
 | Estado | Fase 0 — Concepción (G0) |
 
@@ -136,7 +136,7 @@ Dependencias críticas:
 |---|---:|
 | Núcleo de visión | S/ 1.403,00 |
 | Núcleo operativo de banco | S/ 1.564,80 |
-| Kit completo banco + vuelo (con 5 %) | S/ 2.341,08 |
+| Kit completo banco + vuelo (con 5 %) | S/ 1.805,36 |
 | ToF local VL53L1X (≤4 m) | − S/ 255 (total S/ 2.073,33) |
 | ToF 8×8 VL53L5CX (≤4 m) | − S/ 140 (total S/ 2.194,08) |
 | Reserva recomendada (10 %) | ~S/ 234 |

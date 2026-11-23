@@ -459,18 +459,24 @@ y Active Cooler en lugar de reutilizar la Pi 4 y la Argon ONE. Total documentado
 
 ---
 
-## 8. Pendientes en los BOM de origen
+## 8. Estado de los BOM de origen
 
-Este consolidado ya no coincide con los CSV de cada subproyecto. Hay que aplicar
-los mismos cambios allí para que la fuente de verdad no diverja:
+Los BOM de cada subproyecto se actualizaron el **2026-11-23** para coincidir con
+este consolidado:
 
-| Subproyecto | Archivo | Cambios pendientes |
+| Subproyecto | Archivo | Estado |
 |---|---|---|
-| Mini-rover | `docs/04-diseno/bom-peru.csv` | Quitar LiFePO4, cargador de red, SSD SATA, caja USB y perfil; añadir el **pack 2S4P**, **TP5100**, **boost de tracción**, la **webcam Logitech** y **su propio LiDAR** |
-| Mini-rover | `docs/04-diseno/bom-peru-addons.csv` | El pack 2S4P deja de ser add-on; los bloques 3S2P/3S3P quedan como alternativa |
-| Mini-rover | `docs/04-diseno/bom.md` | Actualizar la BOM en USD y el escenario mínimo (ya no hay HAT/SSD) |
-| Drone | `docs/04-diseno/bom-peru.csv` | Quitar HAT, fuente, SSD NVMe y UBEC; añadir XL4005; aclarar arranque por microSD |
-| Rover-principal | `docs/04-diseno/bom-vision.csv` | Añadir **2 LiDAR** y el **segundo TFmini Plus** |
+| Mini-rover | `bom-peru.csv` · `bom-peru.md` · `bom.md` | Actualizados: subtotal **S/ 2.542,88** y total con 5 % **S/ 2.670,02** |
+| Drone | `bom-peru.csv` · `bom-peru.md` | Actualizados: base **S/ 1.719,39** y total **S/ 1.805,36**; `check_bom.py` ajustado a las nuevas cifras |
+| Rover-principal | `bom-vision.csv` · `bom-vision.md` | Actualizados: V-A **~S/ 3.916,00** (2 LiDAR + 2 ToF) |
+| Rover-principal | `bom-peru.csv` · `bom-peru.md` | Marcados como **documento heredado** del mini demo: no se cotiza desde ahí |
+
+Comprobado con los validadores del repositorio: `check_docs.py` y `check_bom.py`
+del dron y del mini-rover pasan sin errores ni advertencias.
+
+Pendiente y no bloqueante para la cotización: añadir la entrada de bitácora de
+cada subproyecto y registrar en el `fuentes.md` del dron las fuentes nuevas
+(XL4005) si se quieren citar con `F-xx`.
 
 ---
 
@@ -497,5 +503,6 @@ los mismos cambios allí para que la fuente de verdad no diverja:
 - **No** se ha comprado, reservado ni consultado a ningún proveedor.
 - Precios de producto: catálogo web al **2026-11-21**; averiguaciones técnicas del
   **2026-11-23**.
-- Los BOM de origen **no** están actualizados todavía (§8).
+- Los BOM de origen están **actualizados al 2026-11-23** (§8) y los validadores
+  `check_docs.py` y `check_bom.py` pasan sin errores.
 - Las cotizaciones se archivan como evidencia cuando se abra la fase de compras.
