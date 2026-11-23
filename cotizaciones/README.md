@@ -1,8 +1,8 @@
 # Cotizaciones — consolidado transversal de los tres subproyectos
 
 Esta carpeta reúne el **BOM de los tres subproyectos agrupado por proveedor**, con
-cantidades totales, precios, enlaces y stock, para enviar una sola solicitud de
-cotización a cada empresa.
+cantidades totales y cantidades por proyecto, precios, enlaces y stock, para enviar
+una sola solicitud de cotización a cada empresa.
 
 No es un BOM nuevo ni reemplaza a los de cada subproyecto: es una **vista
 consolidada** de compra. La fuente de verdad sigue siendo el BOM de cada uno.
@@ -11,81 +11,82 @@ consolidada** de compra. La fuente de verdad sigue siendo el BOM de cada uno.
 
 | Archivo | Qué contiene |
 |---|---|
-| [`bom-consolidado.md`](bom-consolidado.md) | Documento principal: resumen por proveedor, totales por proyecto, detalle con enlaces, cambios acumulados, respuestas técnicas, exclusiones y supuestos |
-| [`bom-consolidado.csv`](bom-consolidado.csv) | Las mismas 39 líneas en formato tabular para filtrar o adjuntar |
+| [`bom-consolidado.md`](bom-consolidado.md) | Documento principal: resumen por proveedor, totales por proyecto, detalle con columnas MR / DR / RP, cambios acumulados, respuestas técnicas y supuestos |
+| [`bom-consolidado.csv`](bom-consolidado.csv) | Las mismas 40 líneas en formato tabular (`cant_mr`, `cant_dr`, `cant_rp`) |
 | [`solicitud-plantilla.md`](solicitud-plantilla.md) | Asunto, correo, versión de WhatsApp, tabla de líneas para pegar y seguimiento de respuestas |
 
 ## Qué se cotiza
 
-| Bloque | Subproyecto | Origen | Líneas propias |
-|---|---|---|---:|
-| MR | Mini-rover | `mini-rover/docs/04-diseno/bom-peru.csv` + pack 2S4P de `bom-peru-addons.csv` | 20 |
-| DR | Drone | `drone/docs/04-diseno/bom-peru.csv` (solo filas `incluir = si`) | 12 |
-| RP | Rover-principal | `rover-principal/docs/04-diseno/bom-vision.csv` + LiDAR + 2.º ToF | 4 |
-| Compartidas | — | TFmini Plus (los tres), XL4005 (MR+DR), microSD (MR+DR) | 3 |
-| | | **Total** | **39 líneas · 60 unidades** |
+| Bloque | Subproyecto | Origen | Líneas propias | Unidades |
+|---|---|---|---:|---:|
+| MR | Mini-rover | `mini-rover/docs/04-diseno/bom-peru.csv` + pack 2S4P de `bom-peru-addons.csv` | 21 | 38 |
+| DR | Drone | `drone/docs/04-diseno/bom-peru.csv` (solo filas `incluir = si`) | 12 | 17 |
+| RP | Rover-principal | `rover-principal/docs/04-diseno/bom-vision.csv` + 2 LiDAR + 2.º ToF | 3 | 8 |
+| Compartidas | — | LiDAR (MR+RP), TFmini Plus (los tres), XL4005 (MR+DR), microSD (MR+DR) | 4 | — |
+| | | **Total** | **40 líneas · 63 unidades** | |
 
-**Total consolidado: ~S/ 6.923,27** (S/ 6.078,27 verificados + ~S/ 845 estimados),
+**Total consolidado: ~S/ 8.178,27** (S/ 7.278,27 verificados + ~S/ 900 estimados),
 sin envío y sin aduanas.
 
 | Bloque | Verificado | Estimado | Total |
 |---|---:|---:|---:|
-| Mini-rover | S/ 1.657,88 | ~S/ 230 | S/ 1.887,88 |
+| Mini-rover | S/ 2.257,88 | ~S/ 285 | S/ 2.542,88 |
 | Drone | S/ 1.504,39 | ~S/ 215 | S/ 1.719,39 |
-| Rover-principal (visión) | S/ 2.916,00 | ~S/ 400 | S/ 3.316,00 |
+| Rover-principal (visión) | S/ 3.516,00 | ~S/ 400 | S/ 3.916,00 |
+
+## Decisiones cerradas el 2026-11-23
+
+| Tema | Decisión |
+|---|---|
+| LiDAR | **3 unidades**: 1 para el mini-rover y **2 para el rover-principal**. Alternativa aprobada: 3 en el rover principal (total 4, +S/ 600) |
+| Tracción del mini-rover | **Boost 7,4 → 12 V** (módulo de 400 W, ~S/ 55): recupera 83 rpm y 0,39 m/s |
+| Pack de energía | **2S4P de 8 celdas** (7,4 V / 14 Ah / 103,6 Wh) con BMS 2S |
+| Cargador | **TP5100-84** (S/ 5,60): carga 2S a 8,4 V; el CN3722 de 3S ya no aplica |
+| Solar | **2 paneles de 6 V en serie** (12 V); nunca 3 en serie |
+| Pi Box | Sin HAT+ M.2 y sin fuente de 27 W; el dron arranca por microSD |
+| Impresión 3D | Local; no se cotiza |
 
 ## El pack de energía (2S4P)
-
-Definido por el equipo el 2026-11-23: **8 celdas 18650 en 2S4P** (4 en paralelo
-por rama).
 
 | Dato | Valor |
 |---|---|
 | Configuración | 2 series × 4 paralelo = **8 celdas** |
 | Tensión | **7,4 V** nominal / **8,4 V** de carga |
-| Capacidad | **14 Ah** (4 × 3500 mAh) |
+| Capacidad | **14 Ah** |
 | Energía | **103,6 Wh** |
 | BMS | **2S**, 25 A (confirmar SKU en Bracsan) |
-| Cargador | **TP5100-84** (S/ 5,60): entrada 5–18 V, carga 2S a 8,4 V |
-| Solar | **2 paneles de 6 V en serie** (12 V); nunca 3 en serie |
+| Cargador | TP5100-84 (entrada 5–18 V, 2 A) |
+| Solar | 2 paneles de 6 V en serie → ~0,8 A → ~16 h |
+| Red | Fuente 12 V / 2 A → 2 A → ~7 h |
 | Peso aprox. | ~420 g (vs ~1,5 kg de la LiFePO4 retirada) |
-
-> **Ojo con la tracción:** el FIT0185 es de 12 V. A 7,4 V entrega ~51 rpm y
-> ~28 kg·cm en vez de 83 rpm y 45 kg·cm. Es un cambio de prestaciones: aceptarlo
-> (y reajustar Nav2) o volver a 3S para la tracción.
 
 ## Qué **no** se cotiza aquí
 
-- **La copia de la BOM del mini demo en `rover-principal/`**: su propio documento
-  se titula "BOM de electrónica cotizada en Perú (mini demo)" y reproduce la BOM
-  del mini-rover con Pi 5 en lugar de la Pi 4 del inventario. Sumarla duplicaría
-  cantidades. Detalle en `bom-consolidado.md` §7.1.
-- **Lo que la revisión del 2026-11-23 dio de baja**: HAT+ M.2, fuente de 27 W,
-  SSD SATA y NVMe, caja USB, batería LiFePO4, cargador de red, perfil V-Slot y
-  UBEC importado. Se explican en `bom-consolidado.md` §5.
+- **La copia de la BOM del mini demo en `rover-principal/`** (su documento se
+  titula "mini demo"): suma cantidades duplicadas. Detalle en §7.1 del consolidado.
+- **Lo que la revisión dio de baja**: HAT+ M.2, fuente de 27 W, SSD SATA y NVMe,
+  caja USB, batería LiFePO4, cargador de red, perfil V-Slot y UBEC importado.
 - **Inventario y trabajo local**: Raspberry Pi 4 8 GB, Argon ONE V2, perfil
-  V-Slot, impresión 3D (ruedas, placas, soportes) y los 4 paneles solares de 6 V.
+  V-Slot, impresión 3D y los 4 paneles solares de 6 V.
 - **Alternativas** de cámara, ToF, LiDAR y almacenamiento (§7.3 y §7.4).
-- **Add-ons** del mini-rover (ESP32 de tiempo real, pack 3S si se busca más par,
-  soldador de punto) y el **estudio 6×6**, pendiente de `OQ-09`.
-- **El CN3722** (cargador 3S): ya no aplica con el pack de 2S.
+- **Add-ons**: ESP32 de tiempo real, ruedas de 110–120 mm (reserva), soldador de
+  punto y el estudio 6×6 (`OQ-09`).
 
-## Decisiones abiertas antes de enviar
+## Pendiente antes de enviar
 
 | Tema | Estado | Dónde |
 |---|---|---|
-| ¿El mini-rover necesita su propio LiDAR? | Abierto: el único LiDAR va al rover principal. Si sí, +S/ 600 | §6.3 |
-| ¿Se acepta la pérdida de par y velocidad con 2S? | Abierto: ~51 rpm y 0,24 m/s. Alternativas y costos en §6.6 (ruedas grandes gratis, boost S/ 25–55 o motor importado) | §6.6 |
 | BMS 2S de 25 A en Bracsan | A confirmar SKU y precio (referencia S/ 18 del 3S) | §4.4 |
 | Portafusible en Bracsan | A confirmar (referencia Falabella S/ 15,90) | §4.4 |
 | ¿Quién suelda el pack por punto? | Abierto: soldador Bracsan S/ 390, o pedirles que lo suelden | §6.2 |
-| Regulador del dron: ¿XL4005 local o Matek importado? | Propuesto XL4005 (S/ 6,59); el Matek sigue como alternativa | §6.4 |
+| Regulador del dron | XL4005 local (S/ 6,59); el Matek queda como alternativa | §6.4 |
+| BOM de origen desactualizados | Lista exacta de ediciones pendientes | §8 |
 
 ## Estado de los precios
 
 - Productos: **catálogo web del 2026-11-21**; hoy son referencia, no oferta.
-- Averiguaciones técnicas: **2026-11-23** (TP5100, BMS 2S, reguladores locales,
-  soldadura por punto) y están marcadas como tales.
+- Averiguaciones técnicas: **2026-11-23** (TP5100, BMS 2S, boost, reguladores,
+  soldadura) y están marcadas como tales.
 - **No** se contactó a ningún proveedor, no se reservó y no se pagó nada.
 - Las líneas con `~` o `ref.` son **estimaciones o precios de referencia**.
 - Sin envío, sin IGV no declarado y sin aduanas.
@@ -99,8 +100,6 @@ por rama).
 3. Cuando llegue una cotización, anótala en
    [`solicitud-plantilla.md`](solicitud-plantilla.md) §6. La evidencia formal se
    crea en la fase de compras, no ahora.
-4. Los BOM de origen **todavía no tienen aplicados los cambios de la v0.3**: la
-   lista de pendientes está en `bom-consolidado.md` §8.
 
 ## Fase
 

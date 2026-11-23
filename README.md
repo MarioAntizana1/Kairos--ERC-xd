@@ -69,7 +69,7 @@ para enviar la solicitud a cada empresa:
 
 | Documento | Para qué sirve |
 |---|---|
-| [`cotizaciones/bom-consolidado.md`](cotizaciones/bom-consolidado.md) | Documento principal: 39 líneas, 60 unidades y ~S/ 6.923,27 repartidos en 8 proveedores |
+| [`cotizaciones/bom-consolidado.md`](cotizaciones/bom-consolidado.md) | Documento principal: 40 líneas, 63 unidades y ~S/ 8.178,27 repartidos en 9 proveedores, con cantidad por proyecto (mini-rover, dron y rover principal) |
 | [`cotizaciones/bom-consolidado.csv`](cotizaciones/bom-consolidado.csv) | La misma información en tabla, para filtrar o adjuntar |
 | [`cotizaciones/solicitud-plantilla.md`](cotizaciones/solicitud-plantilla.md) | Correo y WhatsApp listos, más la tabla de seguimiento de respuestas |
 
